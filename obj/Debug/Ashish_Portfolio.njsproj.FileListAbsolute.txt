@@ -1,0 +1,6 @@
+C:\Users\LENOVO\source\repos\Ashish_Portfolio\Ashish_Portfolio\obj\Debug\Ashish_Portfolio.njsprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\Ashish_Portfolio\Ashish_Portfolio\obj\Debug\Ashish_Portfolio.njsproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\Ashish_Portfolio\Ashish_Portfolio\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\LENOVO\Downloads\Ashish_Portfolio\Ashish_Portfolio\Ashish_Portfolio\obj\Debug\Ashish_Portfolio.njsprojAssemblyReference.cache
+C:\Users\LENOVO\Downloads\Ashish_Portfolio\Ashish_Portfolio\Ashish_Portfolio\obj\Debug\Ashish_Portfolio.njsproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Downloads\Ashish_Portfolio\Ashish_Portfolio\Ashish_Portfolio\bin\Microsoft.NodejsTools.WebRole.dll

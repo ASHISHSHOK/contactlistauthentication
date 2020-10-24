@@ -1,0 +1,346 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Ashish_Portfolio</Name>
+    <RootNamespace>Ashish_Portfolio</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a09fdf05-bf6d-4a91-b1df-c4d1e62d2a06</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Ashish_Portfolio.njsproj.user" />
+    <Content Include="bin\Microsoft.NodejsTools.WebRole.dll" />
+    <Content Include="config\database.js" />
+    <Content Include="controllers\contactDelete.js" />
+    <Content Include="controllers\contactGet.js" />
+    <Content Include="controllers\contactPut.js" />
+    <Content Include="controllers\contactsGet.js" />
+    <Content Include="controllers\contactsPost.js" />
+    <Content Include="views\index.ejs" />
+    <Content Include="models\config.js" />
+    <Content Include="models\contacts.js" />
+    <Content Include="obj\Debug\Ashish_Portfolio.njsproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\Ashish_Portfolio.njsproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Ashish_Portfolio.njsprojAssemblyReference.cache" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="public\bower.json" />
+    <Content Include="public\css\.DS_Store" />
+    <Content Include="public\css\ajax-loader.gif" />
+    <Content Include="public\css\animate.css" />
+    <Content Include="public\css\aos.css" />
+    <Content Include="public\css\bootstrap-theme.min.css" />
+    <Content Include="public\css\bootstrap.min.css" />
+    <Content Include="public\css\bootstrap\.DS_Store" />
+    <Content Include="public\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="public\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="public\css\css\.DS_Store" />
+    <Content Include="public\css\css\bootstrap-reboot.css" />
+    <Content Include="public\css\css\mixins\_text-hide.css" />
+    <Content Include="public\css\flaticon.css" />
+    <Content Include="public\css\icomoon.css" />
+    <Content Include="public\css\intlTelInput.css" />
+    <Content Include="public\css\ionicons.min.css" />
+    <Content Include="public\css\magnific-popup.css" />
+    <Content Include="public\css\open-iconic-bootstrap.min.css" />
+    <Content Include="public\css\owl.carousel.min.css" />
+    <Content Include="public\css\owl.theme.default.min.css" />
+    <Content Include="public\css\style.css" />
+    <Content Include="public\fonts\.DS_Store" />
+    <Content Include="public\fonts\flaticon\.DS_Store" />
+    <Content Include="public\fonts\flaticon\backup.txt" />
+    <Content Include="public\fonts\flaticon\font\.DS_Store" />
+    <Content Include="public\fonts\flaticon\font\flaticon.css" />
+    <Content Include="public\fonts\flaticon\font\Flaticon.eot" />
+    <Content Include="public\fonts\flaticon\font\flaticon.html" />
+    <Content Include="public\fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="public\fonts\flaticon\font\Flaticon.ttf" />
+    <Content Include="public\fonts\flaticon\font\Flaticon.woff" />
+    <Content Include="public\fonts\flaticon\font\Flaticon.woff2" />
+    <Content Include="public\fonts\flaticon\font\_flaticon.scss" />
+    <Content Include="public\fonts\flaticon\license\license.pdf" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="public\fonts\icomoon\icomoon.eot" />
+    <Content Include="public\fonts\icomoon\icomoon.svg" />
+    <Content Include="public\fonts\icomoon\icomoon.ttf" />
+    <Content Include="public\fonts\icomoon\icomoon.woff" />
+    <Content Include="public\fonts\ionicons\css\ionicons.min.css" />
+    <Content Include="public\fonts\ionicons\css\_ionicons.scss" />
+    <Content Include="public\fonts\ionicons\fonts\.DS_Store" />
+    <Content Include="public\fonts\ionicons\fonts\ionicons.eot" />
+    <Content Include="public\fonts\ionicons\fonts\ionicons.svg" />
+    <Content Include="public\fonts\ionicons\fonts\ionicons.ttf" />
+    <Content Include="public\fonts\ionicons\fonts\ionicons.woff" />
+    <Content Include="public\fonts\ionicons\fonts\ionicons.woff2" />
+    <Content Include="public\fonts\open-iconic\open-iconic.eot" />
+    <Content Include="public\fonts\open-iconic\open-iconic.otf" />
+    <Content Include="public\fonts\open-iconic\open-iconic.svg" />
+    <Content Include="public\fonts\open-iconic\open-iconic.ttf" />
+    <Content Include="public\fonts\open-iconic\open-iconic.woff" />
+    <Content Include="public\images\about.jpg" />
+    <Content Include="public\images\bg_1.jpg" />
+    <Content Include="public\images\image_1.jpg" />
+    <Content Include="public\images\image_2.jpg" />
+    <Content Include="public\images\image_3.jpg" />
+    <Content Include="public\images\loc.png" />
+    <Content Include="public\images\partner-1.png" />
+    <Content Include="public\images\partner-2.png" />
+    <Content Include="public\images\partner-3.png" />
+    <Content Include="public\images\partner-4.png" />
+    <Content Include="public\images\partner-5.png" />
+    <Content Include="public\images\work-1.jpg" />
+    <Content Include="public\images\work-2.jpg" />
+    <Content Include="public\images\work-3.jpg" />
+    <Content Include="public\img\flags.png" />
+    <Content Include="public\js\.DS_Store" />
+    <Content Include="public\js\aos.js" />
+    <Content Include="public\js\bootstrap.min.js" />
+    <Content Include="public\js\controller.js" />
+    <Content Include="public\js\directive.js" />
+    <Content Include="public\js\google-map.js" />
+    <Content Include="public\js\jquery-3.2.1.min.js" />
+    <Content Include="public\js\jquery-migrate-3.0.1.min.js" />
+    <Content Include="public\js\jquery.animateNumber.min.js" />
+    <Content Include="public\js\jquery.easing.1.3.js" />
+    <Content Include="public\js\jquery.magnific-popup.min.js" />
+    <Content Include="public\js\jquery.min.js" />
+    <Content Include="public\js\jquery.stellar.min.js" />
+    <Content Include="public\js\jquery.waypoints.min.js" />
+    <Content Include="public\js\main.js" />
+    <Content Include="public\js\owl.carousel.min.js" />
+    <Content Include="public\js\popper.min.js" />
+    <Content Include="public\js\scrollax.min.js" />
+    <Content Include="public\scss\.DS_Store" />
+    <Content Include="public\scss\bootstrap\.DS_Store" />
+    <Content Include="public\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="public\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="public\scss\bootstrap\bootstrap.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="public\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="public\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="public\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="public\scss\bootstrap\_alert.scss" />
+    <Content Include="public\scss\bootstrap\_badge.scss" />
+    <Content Include="public\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="public\scss\bootstrap\_button-group.scss" />
+    <Content Include="public\scss\bootstrap\_buttons.scss" />
+    <Content Include="public\scss\bootstrap\_card.scss" />
+    <Content Include="public\scss\bootstrap\_carousel.scss" />
+    <Content Include="public\scss\bootstrap\_close.scss" />
+    <Content Include="public\scss\bootstrap\_code.scss" />
+    <Content Include="public\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="public\scss\bootstrap\_dropdown.scss" />
+    <Content Include="public\scss\bootstrap\_forms.scss" />
+    <Content Include="public\scss\bootstrap\_functions.scss" />
+    <Content Include="public\scss\bootstrap\_grid.scss" />
+    <Content Include="public\scss\bootstrap\_images.scss" />
+    <Content Include="public\scss\bootstrap\_input-group.scss" />
+    <Content Include="public\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="public\scss\bootstrap\_list-group.scss" />
+    <Content Include="public\scss\bootstrap\_media.scss" />
+    <Content Include="public\scss\bootstrap\_mixins.scss" />
+    <Content Include="public\scss\bootstrap\_modal.scss" />
+    <Content Include="public\scss\bootstrap\_nav.scss" />
+    <Content Include="public\scss\bootstrap\_navbar.scss" />
+    <Content Include="public\scss\bootstrap\_pagination.scss" />
+    <Content Include="public\scss\bootstrap\_popover.scss" />
+    <Content Include="public\scss\bootstrap\_print.scss" />
+    <Content Include="public\scss\bootstrap\_progress.scss" />
+    <Content Include="public\scss\bootstrap\_reboot.scss" />
+    <Content Include="public\scss\bootstrap\_root.scss" />
+    <Content Include="public\scss\bootstrap\_spinners.scss" />
+    <Content Include="public\scss\bootstrap\_tables.scss" />
+    <Content Include="public\scss\bootstrap\_toasts.scss" />
+    <Content Include="public\scss\bootstrap\_tooltip.scss" />
+    <Content Include="public\scss\bootstrap\_transitions.scss" />
+    <Content Include="public\scss\bootstrap\_type.scss" />
+    <Content Include="public\scss\bootstrap\_utilities.scss" />
+    <Content Include="public\scss\bootstrap\_variables.scss" />
+    <Content Include="public\scss\style.scss" />
+    <Content Include="README.md" />
+    <Content Include="routes\index.js" />
+    <Content Include="routes\users.js" />
+    <Content Include="vendors\bower.json" />
+    <Content Include="vendors\css\bootstrap-theme.min.css" />
+    <Content Include="vendors\css\bootstrap.min.css" />
+    <Content Include="vendors\css\intlTelInput.css" />
+    <Content Include="vendors\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="vendors\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="vendors\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="vendors\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="vendors\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="vendors\img\flags.png" />
+    <Content Include="vendors\js\angular.min.js" />
+    <Content Include="vendors\js\bootstrap.min.js" />
+    <Content Include="vendors\js\intlTelInput.min.js" />
+    <Content Include="vendors\js\jquery.min.js" />
+    <Content Include="vendors\js\utils.js" />
+    <Content Include="views\about.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\contact.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\error.ejs" />
+    <Content Include="views\home.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\login.ejs" />
+    <Content Include="views\loginpage.ejs" />
+    <Content Include="views\project.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\service.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\signup.ejs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="config\" />
+    <Folder Include="controllers\" />
+    <Folder Include="models\" />
+    <Folder Include="obj\" />
+    <Folder Include="obj\Debug\" />
+    <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\css\bootstrap\" />
+    <Folder Include="public\css\css\" />
+    <Folder Include="public\css\css\mixins\" />
+    <Folder Include="public\fonts\" />
+    <Folder Include="public\fonts\flaticon\" />
+    <Folder Include="public\fonts\flaticon\font\" />
+    <Folder Include="public\fonts\flaticon\license\" />
+    <Folder Include="public\fonts\icomoon\" />
+    <Folder Include="public\fonts\ionicons\" />
+    <Folder Include="public\fonts\ionicons\css\" />
+    <Folder Include="public\fonts\ionicons\fonts\" />
+    <Folder Include="public\fonts\open-iconic\" />
+    <Folder Include="public\img\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\scss\" />
+    <Folder Include="public\scss\bootstrap\" />
+    <Folder Include="public\scss\bootstrap\mixins\" />
+    <Folder Include="public\scss\bootstrap\utilities\" />
+    <Folder Include="public\scss\bootstrap\vendor\" />
+    <Folder Include="routes\" />
+    <Folder Include="vendors\" />
+    <Folder Include="vendors\css\" />
+    <Folder Include="vendors\fonts\" />
+    <Folder Include="vendors\img\" />
+    <Folder Include="vendors\js\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
