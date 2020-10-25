@@ -13,7 +13,6 @@ var app = express();
 /* Mongoose init and schema load */
 mongoose.connect("mongodb://localhost:27017/usercollection", {useNewUrlParser: true, useUnifiedTopology: true});
 var teacherModel = require('./models/config');
-var dbConfig = require('./config/database');
 app.use(bodyParser.json());
 app.use(express.static(__dirname+'/client'));
 app.use(express.static(path.join(__dirname, 'public')));
